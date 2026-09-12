@@ -1,6 +1,18 @@
 (function() {
   'use strict';
 
+  var FAKE_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+
+  Object.defineProperty(navigator, 'userAgent', {
+    get: function() { return FAKE_UA; }
+  });
+  Object.defineProperty(navigator, 'platform', {
+    get: function() { return 'Win32'; }
+  });
+  Object.defineProperty(navigator, 'vendor', {
+    get: function() { return 'Google Inc.'; }
+  });
+
   var OPERATION_MARKER = '"operationName":"CLCSInterstitial"';
   var BLOCKED_DOMAINS = [
     'web.prod.cloud.netflix.com',
