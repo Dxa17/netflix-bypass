@@ -1,0 +1,15 @@
+{
+  "name": "netflix-bypass",
+  "version": "1.0.0",
+  "description": "Netflix household verification bypass for TizenBrew",
+  "packageType": "mods",
+  "appName": "Netflix Bypass",
+  "websiteURL": "https://www.netflix.com",
+  "main": "interceptor.js",
+  "evaluateScriptOnDocumentStart": true,
+  "keys": [
+    { "name": "TF_KEY_PLAY", "code": 415 },
+    { "name": "TF_KEY_PAUSE", "code": 19 },
+    { "name": "TF_KEY_STOP", "code": 413 }
+  ]
+}
