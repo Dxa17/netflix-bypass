@@ -7,7 +7,7 @@
   "websiteURL": "https://www.netflix.com",
   "main": "interceptor.js",
   "serviceFile": "service.js",
-  "evaluateScriptOnDocumentStart": true,
+  "evaluateScriptOnDocumentStart": false,
   "keys": [
     "MediaPlayPause",
     "MediaPlay",
